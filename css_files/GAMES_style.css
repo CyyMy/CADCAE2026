@@ -195,7 +195,7 @@ overflow-x: auto;
 }
 
 .course-outline-table .course-meta {
-  width: 29%;
+  width: 24%;
   font-size: 14px;
   line-height: 1.75;
   vertical-align: middle;
@@ -207,11 +207,19 @@ overflow-x: auto;
 }
 
 .course-outline-table td:nth-child(2) {
-  width: 71%;
+  width: 76%;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.42857143;
   vertical-align: middle;
+}
+
+.course-outline-table td:nth-child(2) > ul:first-child {
+  margin-top: 0;
+}
+
+.course-outline-table td:nth-child(2) > ul:last-child {
+  margin-bottom: 10px;
 }
 
 .tableA > table {

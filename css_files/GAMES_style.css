@@ -193,6 +193,33 @@ max-width: 100%;
 overflow-x: auto;
 -webkit-overflow-scrolling: touch;
 }
+
+.course-outline-table .course-meta {
+  width: 42%;
+  min-width: 430px;
+  font-size: 14px;
+  line-height: 1.75;
+  vertical-align: middle;
+}
+
+.course-outline-table .course-meta-line {
+  display: block;
+  white-space: nowrap;
+}
+
+.course-outline-table td:nth-child(2) {
+  width: 58%;
+  vertical-align: middle;
+}
+
+.course-outline-table td:nth-child(2) > p {
+  margin: 0 0 8px;
+}
+
+.course-outline-table td:nth-child(2) > ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .tableA > table {
   width: 100%;
 }

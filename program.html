@@ -124,6 +124,7 @@
               <tr style="background-color:rgb(218, 238, 243)"><td>17:05-17:10</td><td colspan="2">总结</td></tr>
             </tbody>
           </table>
+        </div>
 
           <br>
           <h1 style="font-size:30px">课程大纲</h1>
@@ -132,456 +133,206 @@
             <table class="table table-striped">
               <tbody>
                 <tr style="background-color:rgb(253, 233, 217)">
-                  <td width="30%">课程导论与3D表达概览<br>刘利刚，中国科学技术大学<br>08:30-08:40</td>
+                  <td width="30%">为什么需要引入CAD/CAE一体化？<br>曹娟，厦门大学<br>08:40-09:10</td>
                   <td width="70%" align="left">
+                    <p><strong>目标：</strong>认识传统CAD与CAE相对分离带来的主要问题，理解CAD/CAE一体化的必要性，了解当前主要技术路线、关键挑战与发展趋势。</p>
                     <ul>
-                      <li>3D几何的应用领域及重要性</li>
-                      <ul>
-                        <li>实（CAD、工业制造、3D打印等）</li>
-                        <li>虚（游戏、影视、VR、AIGC等）</li>
-                        <li>虚实结合（AR/XR、数字孪生、机器人、自驾等）</li>
-                      </ul>
-                      <li>3D表达的应用需求与评价维度</li>
-                      <ul>
-                        <li>显式与隐式</li>
-                        <li>几何与外观</li>
-                        <li>精确与高效</li>
-                        <li>可编辑与可生成</li>
-                        <li>可渲染与可分析</li>
-                      </ul>
-                      <li>3D表达的演化史</li>
-                      <ul>
-                        <li>解析表达（NURBS、SDF）</li>
-                        <li>离散表达（Mesh/Points、Voxels）</li>
-                        <li>生成表达（NeRF、3D Gaussian、Generative AI）</li>
-                      </ul>
+                      <li>传统CAD/CAE流程及网格剖分的作用</li>
+                      <li>CAD模型与CAE分析模型之间的差异</li>
+                      <li>CAD、CAE流程进一步融合的必要性</li>
+                      <li>现阶段CAD/CAE一体化的主要技术路线</li>
+                      <li>主要挑战和未来趋势</li>
                     </ul>
                   </td>
                 </tr>
                 <tr style="background-color:rgb(253, 233, 217)">
-                  <td width="30%">传统几何表达<br>傅孝明，中国科学技术大学<br>08:40-09:10</td>
+                  <td width="30%">仿真驱动的几何优化设计及其CAD/CAE一体化问题<br>孙文愈，中国船舶集团海舟系统技术有限公司<br>09:10-09:35</td>
                   <td width="70%" align="left">
-                    <ul style="padding-left:1.2em; margin-left:0;">
-                      以传统几何表达为核心，系统梳理三维形状的经典描述方式、关键技术与转换机制。
-                    </ul>
+                    <p><strong>目标：</strong>了解船舶工程中仿真驱动几何优化设计的基本流程，理解工程实践中的CAD/CAE一体化需求与关键问题，探讨通过可微计算与几何内核架构改进贯通设计、仿真与优化过程的可能技术途径。</p>
                     <ul>
-                      <li>离散表达</li>
-                      <ul>
-                        <li>点云：无结构采样点集</li>
-                        <li>体素：规则三维网格</li>
-                        <li>八叉树：自适应空间剖分</li>
-                        <li>网格：三角面片与半边结构</li>
-                      </ul>
-                      <li>参数化表达</li>
-                      <ul>
-                        <li>边界表示与CSG</li>
-                        <li>NURBS样条曲面</li>
-                        <li>参数驱动与特征建模</li>
-                      </ul>
-                      <li>隐式表达</li>
-                      <ul>
-                        <li>符号距离函数（SDF）</li>
-                        <li>水平集等值面</li>
-                        <li>Marching Cubes提取</li>
-                      </ul>
-                      <li>几何的表观属性表达</li>
-                      <ul>
-                        <li>颜色与纹理贴图</li>
-                        <li>材质与BRDF模型</li>
-                        <li>UV映射与顶点颜色</li>
-                      </ul>
-                      <li>各种表达的相互转换</li>
-                      <ul>
-                        <li>点云转网格</li>
-                        <li>CAD曲面离散化</li>
-                        <li>隐式曲面多边形化</li>
-                        <li>网格体素化与简化</li>
-                        <li>多表达融合流程</li>
-                      </ul>
+                      <li>船舶工程中的仿真驱动几何优化设计概述：典型工程问题、几何参数化、优化问题构建、主要优化方法及瓶颈</li>
+                      <li>工程实践中的CAD/CAE一体化问题：实际需求、现有技术路线的局限与关键卡点</li>
+                      <li>从可微计算到AI原生可微几何内核：梯度机制、架构探索、工程融合与关键挑战</li>
                     </ul>
                   </td>
                 </tr>
                 <tr style="background-color:rgb(253, 233, 217)">
-                  <td width="30%">三维扫描与重建：从两视图立体匹配到前馈式三维恢复<br>崔兆鹏，浙江大学<br>09:10-09:50</td>
+                  <td width="30%">CAE智能体赋能下一代工业软件建设<br>张寒，中国科学技术大学苏州高等研究院<br>09:35-10:00</td>
                   <td width="70%" align="left">
+                    <p><strong>目标：</strong>理解工业仿真软件智能化转型背景，掌握将智能体技术引入CAE工作流的核心方法，了解下一代工业软件的演进方向。</p>
                     <ul>
-                      <li>三维采集设备与数据获取</li>
-                      <li>两视图立体匹配与多视角几何</li>
-                      <li>点云处理与 Mesh 建模</li>
-                      <li>SfM 与 SLAM 三维重建</li>
-                      <li>数据驱动的三维重建方法</li>
+                      <li>工业仿真软件现状与痛点分析</li>
+                      <li>智能体辅助仿真技术原理</li>
+                      <li>核心交互链路设计：自然语言理解、意图解析与智能体动作执行</li>
+                      <li>仿真流程智能化实践：自动前处理、智能参数配置与后处理</li>
+                      <li>开放问题与人机协同：任务边界、异常处理和人机分工</li>
                     </ul>
                   </td>
                 </tr>
                 <tr style="background-color:rgb(253, 233, 217)">
-                  <td width="30%">3D形状理解与分析<br>郭裕兰，中山大学<br>10:00-10:40</td>
-                  <td width="70%" align="left">
-                    <ul>
-                      <li>绪论——3D形状理解与分析任务：形状分割、识别、分类、匹配、检索、补全</li>
-                      <li>传统3D特征描述子</li>
-                      <ul>
-                        <li>Spin Image</li>
-                        <li>SHOT</li>
-                        <li>RoPS</li>
-                        <li>3D SIFT</li>
-                      </ul>
-                      <li>MLP/CNN架构的3D表征学习</li>
-                      <ul>
-                        <li>点云特征学习：PointNet、PointNet++、Point CNN</li>
-                        <li>网格特征学习：MeshCNN</li>
-                        <li>体素特征学习：3D CNN、OctNet</li>
-                        <li>投影图特征学习：MVCNN</li>
-                      </ul>
-                      <li>Transformer架构的3D表征学习</li>
-                      <ul>
-                        <li>点云特征学习：PointTransformer、Point Cloud Transformer (PCT)</li>
-                        <li>网格特征学习：Mesh Transformer</li>
-                        <li>体素特征学习：Voxel Transformer</li>
-                      </ul>
-                      <li>总结与展望</li>
-                    </ul>
-                  </td>
+                  <td width="30%">自适应离散造型系统中的智能逆向细分方法<br>汪国平<br>10:20-11:10</td>
+                  <td width="70%" align="left">&nbsp;</td>
                 </tr>
                 <tr style="background-color:rgb(253, 233, 217)">
-                  <td width="30%">城市场景结构化三维重建<br>申抒含，中科院自动化所<br>10:40-11:20</td>
-                  <td width="70%" align="left">
-                    <ul style="padding-left:1.2em; margin-left:0;">
-                      了解大规模城市场景结构化三维建模在结构表征、重建方法、行业应用方面的挑战和进展。
-                    </ul>
-                    <ul>
-                      <li>城市场景结构化表征：线元、面元、隐式等</li>
-                      <li>解析式结构化重建：基于解析计算和全局优化的重建方法，LIMAP、City3D、FloorUSG等</li>
-                      <li>检测式结构化重建：基于基元检测和结构回归的重建方法，PC2WF、PBWR、BWFormer等</li>
-                      <li>生成式结构化重建：基于扩散模型和自回归模型的重建方法，Point2Building、EdgeDiff、BuildingGPT等</li>
-                      <li>结构化重建行业应用：实景三维城市、轻量化视觉定位等</li>
-                    </ul>
-                  </td>
+                  <td width="30%">基于拓展体素单元的CAD/CAE一体化技术研究<br>李明<br>11:10-12:00</td>
+                  <td width="70%" align="left">&nbsp;</td>
                 </tr>
-                <tr style="background-color:rgb(253, 233, 217)">
-                  <td width="30%">3D扫描与重建在工业界的技术发展与应用<br>江腾飞，杭州先临<br>11:20-11:50</td>
+                <tr style="background-color:rgb(218, 238, 243)">
+                  <td width="30%">等几何分析概览<br>徐岗<br>14:00-14:40</td>
+                  <td width="70%" align="left">&nbsp;</td>
+                </tr>
+                <tr style="background-color:rgb(218, 238, 243)">
+                  <td width="30%">基于隐式表达的CAD/CAE一体化技术研究<br>王胜法，大连理工大学<br>14:40-15:20</td>
                   <td width="70%" align="left">
+                    <p><strong>目标：</strong>了解隐式表达的核心概念，理解基于隐式表达的CAD/CAE一体化优化关键难点。</p>
                     <ul>
-                      <li>工业界中的三维重建问题</li>
-                      <li>常用三维重建方法与应用</li>
-                      <li>智能重建方法展望</li>
+                      <li>复杂结构隐式表示：隐式函数、隐式逼近、隐式场与参数控制</li>
+                      <li>基于隐式表示的模型构建、敏感性分析及优化求解一体化框架</li>
+                      <li>隐式表达的优势与挑战：可编辑性、精确性、拓扑与几何约束</li>
+                      <li>隐式表达在神经网络表示和深度学习方面的探索</li>
                     </ul>
                   </td>
                 </tr>
                 <tr style="background-color:rgb(218, 238, 243)">
-                  <td width="30%">交互式三维设计与建模<br>王泽宇，香港科技大学（广州）<br>14:30-15:10</td>
+                  <td width="30%">基于Walk on Spheres的CAD物理感知前置探索<br>方清，中国科学技术大学<br>15:20-16:00</td>
                   <td width="70%" align="left">
-                    <ul style="padding-left:1.2em; margin-left:0;">
-                      了解人机交互式三维设计与建模的基本概念与发展脉络，理解CAD建模、草图建模、雕刻建模等建模方式的技术路径。
-                    </ul>
+                    <p><strong>课程简介：</strong>探讨基于Walk on Spheres的无网格PDE求解方法，利用其按需查询、天然并行和精度可调的特点，快速估计物理场及其梯度，为初始方案评估与物理感知特征简化提供支持。</p>
                     <ul>
-                      <li>三维建模的定义：人类设计师的先验与几何约束的结合</li>
-                      <li>CAD建模：从二维曲线到三维形状，拉伸、旋转、扫掠、放样，参数化建模，基于网格编辑的直接建模</li>
-                      <li>基于草图的建模：自由形状的三维设计，Teddy草图系统，从轮廓线条膨胀出三维表面，视角与几何先验，cross-section与表面曲率场的优化，基于深度学习的方法</li>
-                      <li>编辑与变形：自由网格变形，基于微分坐标的编辑，基于skeleton和cage等代理的编辑，skinning与网格变形和动画</li>
-                      <li>三维雕刻与细节建模：雕刻笔刷的几何定义，向量变形场，物理雕刻与数字雕刻，生成式AI赋能的三维雕刻，ZBrush、Mudbox等工具</li>
-                      <li>其他建模方式：过程式建模，分形、L-systems，基于物理的建模</li>
-                      <li>三维建模工具与展望：CAD建模工具SolidWorks, AutoCAD, Rhino, Catia，网格建模工具Blender, 3D Max,
-                        Maya，草图建模工具SketchUp等</li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr style="background-color:rgb(218, 238, 243)">
-                  <td width="30%">神经几何表达：几何与外观耦合<br>陈安沛，西湖大学<br>15:10-16:00</td>
-                  <td width="70%" align="left">
-                    <ul>
-                      <li>新视角合成与场景表示
+                      <li>设计迭代中的物理反馈困难与挑战
                         <ul>
-                          <li>新视角合成问题定义</li>
-                          <li>从图像驱动方法到三维场景表示</li>
+                          <li>CAD设计迭代中的仿真开销</li>
+                          <li>设计阶段的物理反馈需求</li>
+                          <li>Walk on Spheres的技术定位</li>
                         </ul>
                       </li>
-                      <li>神经辐射场（Neural Radiance Fields）
+                      <li>Walk on Spheres：面向复杂几何的无网格PDE求解
                         <ul>
-                          <li>体渲染原理与神经表达</li>
-                          <li>训练、渲染与几何提取</li>
-                          <li>动态场景重建</li>
+                          <li>PDE解的概率表示与经典Walk on Spheres算法</li>
+                          <li>复杂边界条件扩展</li>
+                          <li>计算特性与主要挑战</li>
                         </ul>
                       </li>
-                      <li>高斯泼溅（3D Gaussian Splatting）
+                      <li>从物理场估计到物理感知设计
                         <ul>
-                          <li>高斯基元表示与光栅化原理</li>
-                          <li>压缩、渲染与几何提取</li>
-                          <li>动态场景重建</li>
+                          <li>物理信息的按需估计</li>
+                          <li>设计方案快速评估</li>
+                          <li>物理感知特征简化</li>
                         </ul>
                       </li>
-                      <li>前馈式新视角合成
+                      <li>热传导与稳态Lamé方程探索
                         <ul>
-                          <li>显式表征驱动的前馈式建模</li>
-                          <li>无显式表征驱动的前馈式建模</li>
+                          <li>计算温度场、梯度分布及线弹性位移场</li>
                         </ul>
                       </li>
-                      <li>课程总结与讨论
+                      <li>未来研究：变系数、波动方程、流体及多物理场耦合，几何缺陷与混合边界条件处理，高效计算、逆向形状优化和可微设计</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr style="background-color:rgb(253, 233, 217)">
+                  <td width="30%">适合分析的T样条的定义与数学性质<br>李新，中国科学技术大学数学科学学院<br>08:30-09:10</td>
+                  <td width="70%" align="left">
+                    <p><strong>目标：</strong>了解T样条的定义和特性，以及T样条在CAD/CAE一体化中已经取得的应用和潜在应用。</p>
+                    <ul>
+                      <li>T样条的定义</li>
+                      <li>T样条的理论性质</li>
+                      <li>T样条的CAD算法</li>
+                      <li>T样条在一体化中的应用</li>
+                      <li>T样条潜力讨论</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr style="background-color:rgb(253, 233, 217)">
+                  <td width="30%">面向等几何分析的区域参数化方法<br>朱春钢，大连理工大学<br>09:10-09:50</td>
+                  <td width="70%" align="left">
+                    <p><strong>目标：</strong>从区域边界表示出发，了解面向等几何分析的高质量区域参数化构造流程与主要方法。</p>
+                    <ul>
+                      <li>研究背景及研究分类</li>
+                      <li>NURBS参数化方法：代数、优化、非线性偏微分方程和r-自适应方法</li>
+                      <li>复杂区域参数化方法：新型样条、多片参数化和GIFT方法</li>
+                      <li>基于学习的区域参数化方法及新的进展</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr style="background-color:rgb(253, 233, 217)">
+                  <td width="30%">面向等几何分析的快速矩阵组装与求解技术<br>潘茂东，南京航空航天大学<br>10:05-10:45</td>
+                  <td width="70%" align="left">
+                    <p><strong>目标：</strong>系统了解等几何分析中矩阵组装与线性系统求解的计算瓶颈及加速技术。</p>
+                    <ul>
+                      <li>等几何分析求解偏微分方程边值问题的基本步骤</li>
+                      <li>经典高斯积分矩阵组装的计算复杂度及瓶颈</li>
+                      <li>面向NURBS等几何数值仿真的快速矩阵组装方法</li>
+                      <li>面向HB样条、THB样条等局部加细样条的快速矩阵组装方法</li>
+                      <li>多重网格法、预条件技术及低秩逼近等快速求解方法</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr style="background-color:rgb(253, 233, 217)">
+                  <td width="30%">面向裁剪CAD的稳定化等几何分析<br>魏小东，上海交通大学<br>10:45-11:25</td>
+                  <td width="70%" align="left">
+                    <p><strong>目标：</strong>认识直接使用裁剪CAD进行分析所面临的核心数值问题，了解针对不同类型偏微分方程的主流稳定化方法。</p>
+                    <ul>
+                      <li>裁剪CAD建模：Trimmed NURBS、B-Rep与浸入边界法（Immersed Boundary Method）</li>
+                      <li>裁剪带来的数值困境
                         <ul>
-                          <li>几何与外观耦合建模的挑战</li>
-                          <li>新视角合成的未来方向讨论</li>
+                          <li>极小裁剪单元引起的离散稳定性问题</li>
+                          <li>不规则裁剪单元带来的数值积分问题</li>
+                          <li>离散空间与物理边界不匹配导致的边界条件施加问题</li>
+                          <li>极小裁剪单元导致的刚度矩阵病态问题</li>
                         </ul>
                       </li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr style="background-color:rgb(218, 238, 243)">
-                  <td width="30%">鸿蒙空间化和3DGS创新在鸿蒙上的0到1商用<br>黄然，华为<br>16:00-16:30</td>
-                  <td width="70%" align="left">
-                    <ul style="padding-left:1.2em; margin-left:0;">
-                      鸿蒙系统从2019年发布至今，已经成功在华为手机上实现了6000万商用的突破，从跳越生死线进入到创新阶段。而3DGS技术在鸿蒙空间化战略上发挥了重要作用，成为吸引消费者的关进技术，从Remy到3D空间影像壁纸，从空间影像壁纸到更多鸿蒙生态应用。本课程通过介绍鸿蒙空间化方舟图形引擎和3DGS的实践落地，让同学们学到从一个图形技术到商用落地的全过程。
-                    </ul>
-                    <ul>
-                      <li>鸿蒙空间化与方舟图形引擎介绍</li>
-                      <li>方舟图形引擎的整体架构与三大用户体验</li>
-                      <li>3DGS技术介绍与商用落地（含Remy、空间影像壁纸）</li>
-                      <li>未来空间化技术展望</li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr style="background-color:rgb(218, 238, 243)">
-                  <td width="30%">三维生成模型 (1)<br>王鹏帅，北京大学<br>张彪，西安交通大学<br>16:40-17:40</td>
-                  <td width="70%" align="left">
-                    <ul style="padding-left:1.2em; margin-left:0;">
-                      一、生成模型基础：从概率建模到三维资产生成
-                    </ul>
-                    <ul>
-                      <li>VAE：从连续潜空间生成三维形状</li>
-                      <ul>
-                        <li>编码器：将数据压缩为潜变量分布</li>
-                        <li>解码器：从潜变量重建数据</li>
-                        <li>重参数化技巧：使随机采样过程可反向传播</li>
-                        <li>KL散度约束：使潜空间接近标准高斯分布</li>
-                        <li>重建损失：保证生成结果接近原始数据</li>
-                      </ul>
-                      <li>GAN：从对抗学习到高真实感生成</li>
-                      <ul>
-                        <li>生成器：从随机噪声生成样本</li>
-                        <li>判别器：区分真实样本与生成样本</li>
-                        <li>对抗损失：推动生成结果逼近真实数据分布</li>
-                        <li>训练不稳定性：GAN的经典难点</li>
-                      </ul>
-                      <li>自回归模型（Auto-Regressive Model）：将生成过程转化为逐token预测</li>
-                      <ul>
-                        <li>序列建模</li>
-                        <li>条件概率分解</li>
-                        <li>Transformer结构</li>
-                        <li>Next-token prediction（下一个token预测）</li>
-                      </ul>
-                      <li>扩散模型：从噪声中逐步恢复三维结构</li>
-                      <ul>
-                        <li>前向过程：逐步向数据加入高斯噪声</li>
-                        <li>反向过程：学习如何从噪声逐步还原数据</li>
-                        <li>模型可预测噪声、干净样本或score</li>
-                      </ul>
-                      <li>Flow Matching：从逐步去噪到学习连续生成路径</li>
-                      <ul>
-                        <li>连续时间生成模型</li>
-                        <li>ODE视角</li>
-                        <li>概率路径</li>
-                        <li>从噪声分布到数据分布的传输过程</li>
-                        <li>与扩散模型的统一关系</li>
-                      </ul>
-                    </ul>
-                    <ul style="padding-left:1.2em; margin-left:0;">
-                      二、三维数据表征：从基础表示到生产级表示
-                    </ul>
-                    <ul>
-                      <li>基础表征：体素（Voxel）、点云（Point Cloud）、多边形网格（Polygonal Mesh）</li>
-                      <li>隐式场表征：占用场（Occupancy）、符号距离场（SDF）、神经辐射场（NeRF）、三平面（Triplane）</li>
-                      <li>集合表征：VecSet（向量集合），将三维形状编码为无序向量集合</li>
-                      <li>稀疏体素：Octree、SLAT、O-Voxel（TRELLIS.2）等方法，缓解传统体素的内存开销问题并支持高分辨率生成</li>
-                      <li>效果与效率对比：从几何精度、纹理质量、拓扑灵活性、推理速度和训练成本五个维度比较各类表征的优劣</li>
+                      <li>针对裁剪的稳定化方法：Ghost Penalty、Aggregated FEM、Shifted Boundary、Basis Function Removal、WEB-Splines与Minimal Stabilization</li>
+                      <li>不同类型偏微分方程的稳定化处理：Poisson、线弹性等椭圆型问题，以及Stokes、不可压弹性等鞍点问题</li>
+                      <li>裁剪几何下的数值积分与边界条件处理：八叉树、积分域分解、降维积分、弱施加与混合型方法</li>
                     </ul>
                   </td>
                 </tr>
                 <tr style="background-color:rgb(253, 233, 217)">
-                  <td width="30%">三维生成模型 (2)<br>张彪，西安交通大学<br>王鹏帅，北京大学<br>08:30-09:30</td>
+                  <td width="30%">基于渐进迭代的等几何最小二乘配点法：理论分析、加速和应用<br>蔺宏伟，浙江大学<br>11:25-12:05</td>
                   <td width="70%" align="left">
-                    <ul style="padding-left:1.2em; margin-left:0;">
-                      三、里程碑时间线：由表征驱动的三维生成方法演进
-                    </ul>
+                    <p><strong>目标：</strong>了解等几何配点法基本原理，掌握基于渐进迭代逼近的等几何最小二乘配点法的理论与算法加速手段，熟悉其实际应用场景。</p>
                     <ul>
-                      <li>经典探索期（2016-2022）：从直接生成到隐式表示</li>
-                      <ul>
-                        <li>早期直接生成方法</li>
-                        <li>隐式表示革命</li>
-                        <li>关键突破：证明隐式表示能够生成高质量连续表面</li>
-                      </ul>
-                      <li>SDS阶段（2022-2023）：利用二维先验缓解三维数据匮乏问题</li>
-                      <ul>
-                        <li>核心原理：Score Distillation Sampling（SDS）利用预训练二维扩散模型指导三维表示优化</li>
-                        <li>代表模型：DreamFusion、Magic3D等</li>
-                        <li>局限性：每个样本需要单独优化（分钟级），且存在多视角不一致、几何细节不足等问题</li>
-                      </ul>
-                      <li>多视角扩散阶段（2023-2024）：前馈大模型涌现</li>
-                      <ul>
-                        <li>核心思想：先生成一致的多视角图像，再通过前馈重建模型得到三维结构</li>
-                        <li>代表模型：Instant3D、Wonder3D、InstantMesh等</li>
-                        <li>技术特点：推理速度大幅提升（10秒内），可批量生成，但几何精度仍有提升空间</li>
-                      </ul>
-                      <li>原生三维生成大模型（2023-2025）：面向生产级应用的两条路线</li>
-                      <ul>
-                        <li>路线一：基于稀疏体素的方法；优势是天然支持空间结构，代表模型包括TRELLIS v1/v2、Sparc3D</li>
-                        <li>路线二：基于VecSet的方法；优势是表示紧凑、训练高效、几何细节丰富，代表模型包括3DShape2VecSet、CLAY、Hunyuan3D、TripoSG</li>
-                      </ul>
-                      <li>多边形网格直接生成（2025年至今）：端到端生产级资产生成</li>
-                      <ul>
-                        <li>核心挑战：直接生成拓扑正确、结构合理、面数高效的三角形网格</li>
-                        <li>代表模型：PolyGen、MeshGPT等</li>
-                        <li>技术意义：直接输出可用于游戏、影视和工业设计的标准网格格式，减少后处理，更接近端到端生产流程</li>
-                      </ul>
-                    </ul>
-                    <ul style="padding-left:1.2em; margin-left:0;">
-                      四、三维生成技术发展趋势与生产落地挑战
-                    </ul>
-                    <ul>
-                      <li>表征融合趋势：稀疏体素与VecSet结合、网格与隐式表示统一</li>
-                      <li>效率与质量的平衡：从“能生成”走向“生成得又快又好”</li>
-                      <li>生产级需求：水密性、拓扑正确性、PBR材质支持和可编辑性</li>
-                      <li>未来方向：4D动态生成、大规模场景生成、交互式编辑和多模态统一生成</li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr style="background-color:rgb(253, 233, 217)">
-                  <td width="30%">3D大模型：从物体生成到世界模型<br>王腾飞，腾讯混元<br>09:30-10:00</td>
-                  <td width="70%" align="left">
-                    <ul style="padding-left:1.2em; margin-left:0;">
-                      理解工业管线中对3D生成模型的需求，理解3D物体生成的前沿进展，理解3D世界模型的前沿方向。
-                    </ul>
-                    <ul>
-                      <li>腾讯混元大模型介绍</li>
-                      <li>混元3D：3D物体生成的进展与应用</li>
-                      <li>混元World：3D世界模型的进展与应用</li>
-                      <li>总结与展望</li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr style="background-color:rgb(253, 233, 217)">
-                  <td width="30%">装配体和关节可动对象生成技术<br>穆亚东，北京大学<br>10:10-10:50</td>
-                  <td width="70%" align="left">
-                    <ul style="padding-left:1.2em; margin-left:0;">
-                      了解和掌握近年来装配体和关节可动对象生成的最新技术。
-                    </ul>
-                    <ul>
-                      <li>任务概述和基础技术介绍</li>
-                      <li>图网络与序列生成</li>
-                      <li>基于扩散模型的端到端生成</li>
-                      <li>基于多模态大模型和智能体的装配生成</li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr style="background-color:rgb(253, 233, 217)">
-                  <td width="30%">基于生成式AI的三维场景生成<br>盛律，北京航空航天大学<br>10:50-11:30</td>
-                  <td width="70%" align="left">
-                    <ul style="padding-left:1.2em; margin-left:0;">
-                      理解三维场景生成的主要流程与关键挑战，熟悉基于多模态学习与智能体推理的三维场景生成研究范式。
-                    </ul>
-                    <ul>
-                      <li>三维场景生成的基本任务与主要挑战</li>
-                      <li>基于多模态学习的三维场景生成：从文本、图像或者视频生成符合视觉、语义与结构需求的三维场景，包含单一场景生成与组合式场景生成等</li>
-                      <li>基于智能体推理的三维场景生成：LLM/VLM等智能体驱动的设计意图理解、任务拆解与方案规划，以及三维资产生成、空间约束推理、布局生成与优化、迭代反馈修正等</li>
-                      <li>趋势与展望：从静态三维场景走向动态四维场景生成，从视觉与几何建模走向物理与语义内生嵌入，以及实际应用落地等方面的趋势与发展方向</li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr style="background-color:rgb(253, 233, 217)">
-                  <td width="30%">教 AI 摆放世界：可控三维物体摆放与场景生成<br>刘中远，腾讯游戏<br>11:30-12:00</td>
-                  <td width="70%" align="left">
-                    <ul style="padding-left:1.2em; margin-left:0;">
-                      让 AI 学会构建一个可交互、可沉浸的虚拟世界，是计算机图形学、人工智能与艺术设计交叉地带最激动人心的方向之一。本课程会先用少量篇幅，带大家俯瞰 AI
-                      生成虚拟世界、世界模型与艺术创作的整体图景，然后把镜头聚焦到其中一个最基础、也最关键的具体问题——三维场景中的物体摆放。围绕这个问题，课程将依次讲解：场景搭建如何被建模为&quot;单物体迭代摆放&quot;；为什么基于有向包围盒的传统表示难以处理支撑、包含、避碰等精细几何约束；以及如何用一个几何感知的多模态语言模型——直接以点云感知物体与场景的几何、自回归预测物体的
-                      6D 位姿——来突破这一瓶颈，并通过&quot;规划—摆放—验证&quot;的智能体闭环，实现文本驱动的自动场景生成。
-                      整体上，课程将依次覆盖问题的建模、几何感知模型的设计、训练数据的构建，以及实验与评估，并结合具体案例展示物体摆放与自动场景生成的实际效果。
+                      <li>等几何配点法概述</li>
+                      <li>等几何最小二乘配点法原理</li>
+                      <li>一致性、收敛性及配置矩阵谱性质分析</li>
+                      <li>基于Schulz迭代的复合迭代加速方案</li>
+                      <li>隐式多孔结构仿真等应用进展</li>
                     </ul>
                   </td>
                 </tr>
                 <tr style="background-color:rgb(218, 238, 243)">
-                  <td width="30%">面向具身智能的三维生成、世界模型与自主进化<br>穆尧，上海交通大学<br>14:30-15:30</td>
+                  <td width="30%">细分表示在等几何分析中的实现与应用<br>康红梅，苏州大学<br>14:00-14:40</td>
                   <td width="70%" align="left">
-                    <ul style="padding-left:1.2em; margin-left:0;">
-                      了解3D表达、建模与生成在具身智能中的核心作用，理解生成式3D技术如何支撑具身仿真、世界模型和机器人自进化系统，掌握从三维场景/资产生成到仿真数据引擎、世界预测与策略学习闭环的基本思路。
-                    </ul>
+                    <p><strong>目标：</strong>掌握细分曲面的核心概念，理解细分等几何分析的基本实现流程，认识细分表示在CAD/CAE一体化中的应用价值。</p>
                     <ul>
-                      <li>3D生成 for 具身仿真：多样化场景生成、可交互物体资产生成、物理属性标注、功能区域标注、抓取点标注与仿真可用数字孪生构建</li>
-                      <li>具身仿真数据引擎：以RoboTwin、ManiTwin、Rein3D等为例，介绍任务场景自动构建、专家数据生成、领域随机化、仿真到现实迁移，以及面向双臂、灵巧手和人形机器人的仿真平台
-                      </li>
-                      <li>世界模型驱动的动作生成：介绍World Action Model、Video-Action Model、VLA-World
-                        Model等路线，理解视频预测、未来状态想象、逆动力学模型和动作解码之间的关系</li>
-                      <li>具身智能体自进化：介绍“环境生成—数据生成—模型训练—进展评估—失败诊断—策略改进—真实验证”的闭环系统，讨论生成式仿真、强化学习、基础模型和智能调度Agent如何共同推动机器人持续进化
-                      </li>
+                      <li>细分等几何分析的研究背景、动机与发展历程</li>
+                      <li>有限元逼近空间、细分曲面求值求导、矩阵组装及分析框架</li>
+                      <li>高精度与高效率方面的关键科学问题和技术挑战</li>
+                      <li>薄壳、复杂拓扑结构及声学等典型应用</li>
                     </ul>
                   </td>
                 </tr>
                 <tr style="background-color:rgb(218, 238, 243)">
-                  <td width="30%">3D生成大模型的表征之路<br>贾荣飞，数美万物<br>15:40-16:10</td>
+                  <td width="30%">面向CAD和CAE一体化的共形嵌入域等几何分析<br>祝雪峰，大连理工大学<br>14:40-15:20</td>
                   <td width="70%" align="left">
+                    <p><strong>目标：</strong>理解CAD与CAE长期分离的根源，认识适合分析的几何与笛卡尔嵌入方法的发展脉络，掌握共形嵌入域等几何分析、B++样条和THB++样条的基本思想与特点。</p>
                     <ul>
-                      <li>问题与核心挑战：3D生成为何比2D难一个数量级</li>
-                      <li>四次表征跨越：SDS蒸馏时代 → 多视图+稀疏视角重建时代 → 3D原生时代 → Sparse Voxel时代</li>
-                      <li>3D几何大模型：Sparc3D——业内首个1536³分辨率3D几何大模型</li>
-                      <li>原生纹理大模型与语义分割：Hitem3D 2.0——业内首个原生3D纹理生成框架与最优3D语义分割</li>
-                      <li>最新效果与生产闭环：几何、纹理、分割全链路效果展示，从单张图像到3D打印的端到端演示</li>
-                      <li>3D大模型现状与未来：竞争格局、表征核心变量</li>
+                      <li>发展历程与基本问题：回顾适合分析的几何、虚域法、有限胞元法及嵌入式等几何分析的发展，比较边界拟合与笛卡尔嵌入两类方法，并说明CAD与CAE长期分离的原因</li>
+                      <li>共形嵌入域等几何分析：介绍方法从问题提出到体系形成的过程，重点阐述B++样条的高阶连续性、几何适应性和配点插值性质，以及THB++样条的层次化加密能力</li>
+                      <li>计算方法与应用体系：介绍实体结构和裁剪壳体的分析域识别、裁剪积分、近似空间构造及边界约束方法，以及在结构力学、热—力耦合、流—固耦合、复杂装配体和显式动力学中的应用</li>
+                      <li>工程应用：结合航空航天、汽车、船舶及机械装备，介绍从CAD模型导入、背景空间构造到求解和结果回映射的完整流程</li>
                     </ul>
                   </td>
                 </tr>
                 <tr style="background-color:rgb(218, 238, 243)">
-                  <td width="30%">融合经典与前沿：生成式三维建模与全栈架构实践<br>曹炎培，VAST<br>16:10-16:40</td>
+                  <td width="30%">薄壁结构等几何计算与形状优化<br>杜孝孝，北京航空航天大学<br>15:20-16:00</td>
                   <td width="70%" align="left">
-                    <ul style="padding-left:1.2em; margin-left:0;">
-                      近年来，随着生成式人工智能的爆发，三维几何表达与建模技术正经历一场底层范式的重构。传统的离散几何表征（如多边形网格）与现代神经网络隐式表达在生成式架构中发生了深度的碰撞与融合。本课程旨在系统梳理
-                      3D 生成技术的发展脉络，探讨如何打破生成速度、质量与工业管线可用性之间的“不可能三角”。课程将从底层三维原生表征出发，多层递进，剖析结构化重拓扑、语义解耦与自动化绑定等关键图形学问题的 AI
-                      解决路径，并拓展至场景生成与交互式世界模型，为学员建立一个从单体资产生成到可交互世界的统一概览。
-                    </ul>
+                    <p><strong>目标：</strong>理解薄壁结构等几何计算思路和形状优化方法。</p>
                     <ul>
-                      <li>三维表达的演进与生成式架构的重构</li>
-                      <ul>
-                        <li>从优化到前向推断：3D 生成的范式转移</li>
-                        <li>现代神经表征与原生 3D 生成</li>
-                      </ul>
-                      <li>打通图形学管线：从“数字雕像”到工业级结构化资产</li>
-                      <ul>
-                        <li>可编辑性与语义解耦</li>
-                        <li>生成几何的自动化拓扑</li>
-                        <li>纹理与材质的全局一致性</li>
-                      </ul>
-                      <li>赋予资产动态潜能：自动骨骼绑定与运动推演</li>
-                      <ul>
-                        <li>任意拓扑下的自动化控制流</li>
-                        <li>动作引导的联合时空扩散</li>
-                      </ul>
-                      <li>跨越单体数字资产</li>
-                      <ul>
-                        <li>场景级3D生成</li>
-                        <li>世界模型初探</li>
-                      </ul>
-                      <li>总结与 Q&A</li>
-                      <ul>
-                        <li>总结</li>
-                        <li>互动问答</li>
-                      </ul>
-                    </ul>
-                  </td>
-                </tr>
-                <tr style="background-color:rgb(218, 238, 243)">
-                  <td width="30%">迈向工业可用的3D生成<br>许家乐，Meshy<br>16:40-17:10</td>
-                  <td width="70%" align="left">
-                    <ul style="padding-left:1.2em; margin-left:0;">
-                      理解3D生成从“视觉可看”走向“工业可用”的关键问题，掌握高模生成与低模生成的主要技术路线及未来挑战。
-                    </ul>
-                    <ul>
-                      <li>背景知识：3D表征与生成模型</li>
-                      <li>更精细：高模生成技术路线</li>
-                      <ul>
-                        <li>基于多视角重建的方法（LRM, Instant3D, InstantMesh, FreeSplatter）</li>
-                        <li>基于3D原生扩散模型的方法（3DShape2Vecset, TRELLIS, Lattice）</li>
-                      </ul>
-                      <li>更可用：低模生成技术路线</li>
-                      <ul>
-                        <li>基于自回归模型的方法（MeshGPT, MeshXL, BPT, TreeMeshGPT, MeshWeaver）</li>
-                        <li>基于扩散模型的方法（SpaceMesh, MeshFlow, MeshCraft, Lato）</li>
-                      </ul>
-                      <li>3D生成的挑战与未来趋势</li>
+                      <li>六自由度Reissner-Mindlin壳理论与全局刚度矩阵奇异问题</li>
+                      <li>多片建模与交界面耦合计算</li>
+                      <li>薄壁结构等几何形状优化与灵敏度计算</li>
+                      <li>考虑建模历史的混合灵敏度方法</li>
+                      <li>等几何分析技术未来工程应用讨论</li>
                     </ul>
                   </td>
                 </tr>
@@ -591,6 +342,7 @@
 
         </div>
       </div>
+    </div>
       <!-- /.container -->
 
       <footer class="footer">

@@ -194,7 +194,12 @@ text-align:justify;
 }
 
 #zhuxuefeng .speaker-photo {
-  --photo-scale: 0.9;
+  --photo-scale: 1;
+  --photo-position: 50% 50%;
+}
+
+#zhuxuefeng .speaker-photo img {
+  object-fit: contain;
 }
 
 #lixin .speaker-photo {

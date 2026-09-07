@@ -215,17 +215,6 @@ overflow-x: auto;
   vertical-align: middle;
 }
 
-.course-outline-table td:nth-child(2) > p {
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  margin: 0 0 8px;
-}
-
-.course-outline-table td:nth-child(2) > ul {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 .tableA > table {
   width: 100%;
 }

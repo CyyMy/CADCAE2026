@@ -183,13 +183,18 @@ text-align:justify;
   max-height: none;
   border-radius: 0;
   box-shadow: none;
-  transform: translate(-50%, -50%) scale(var(--photo-scale, 1));
+  transform: translate(-50%, -50%) translateY(var(--photo-y, 0px)) scale(var(--photo-scale, 1));
   transform-origin: var(--photo-origin, center center);
 }
 
 #sunwenyu .speaker-photo {
   --photo-scale: 1.7;
   --photo-origin: 50% 24%;
+  --photo-y: -8px;
+}
+
+#zhuxuefeng .speaker-photo {
+  --photo-scale: 0.9;
 }
 
 #lixin .speaker-photo {

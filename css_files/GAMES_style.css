@@ -195,7 +195,8 @@ overflow-x: auto;
 }
 
 .course-outline-table .course-meta {
-  font-size: 14px;
+  width: 34%;
+  font-size: 12px;
   line-height: 1.75;
   vertical-align: middle;
 }
@@ -206,6 +207,7 @@ overflow-x: auto;
 }
 
 .course-outline-table td:nth-child(2) {
+  width: 66%;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.42857143;

@@ -224,7 +224,7 @@ text-align:justify;
 
 #panmaodong .speaker-photo {
   --photo-width: 235px;
-  --photo-top: 2px;
+  --photo-top: 0px;
 }
 
 #weixiaodong .speaker-photo {
@@ -240,7 +240,7 @@ text-align:justify;
 
 #kanghongmei .speaker-photo {
   --photo-width: 180px;
-  --photo-top: 6px;
+  --photo-top: 0px;
 }
 
 #zhuxuefeng .speaker-photo {

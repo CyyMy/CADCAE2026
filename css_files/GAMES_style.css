@@ -222,6 +222,11 @@ text-align:justify;
   --photo-top: -3px;
 }
 
+#wanguoping .speaker-photo {
+  --photo-width: 180px;
+  --photo-top: 0px;
+}
+
 #panmaodong .speaker-photo {
   --photo-width: 235px;
   --photo-top: 0px;

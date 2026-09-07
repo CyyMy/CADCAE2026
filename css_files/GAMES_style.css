@@ -184,64 +184,73 @@ text-align:justify;
   transform: translateX(-50%);
 }
 
-/* Original portraits: hairline top aligned 12px below the 146px frame top. */
-.speaker-photo:has(img:not([src$="placeholder.svg"])) {
-  --photo-width: 124px;
-}
-
+/* Individual original-photo framing, matching the GRMG head-and-shoulders reference. */
 #caojuan .speaker-photo {
-  --photo-top: -7px;
+  --photo-width: 132px;
+  --photo-top: -9px;
+  background-color: #e8e8e8;
 }
 
 #sunwenyu .speaker-photo {
-  --photo-width: 224px;
-  --photo-top: -39px;
+  --photo-width: 300px;
+  --photo-top: -58px;
 }
 
 #zhanghan .speaker-photo {
-  --photo-top: 2px;
+  --photo-width: 135px;
+  --photo-top: -1px;
+  background-color: #80cdf9;
 }
 
 #wangshengfa .speaker-photo {
-  --photo-top: -2px;
+  --photo-width: 140px;
+  --photo-top: -6px;
 }
 
 #fangqing .speaker-photo {
-  --photo-top: 12px;
+  --photo-width: 146px;
+  --photo-top: 10px;
 }
 
 #lixin .speaker-photo {
-  --photo-width: 190px;
-  --photo-top: -32px;
+  --photo-width: 222px;
+  --photo-top: -41px;
 }
 
 #zhuchungang .speaker-photo {
-  --photo-top: 3px;
+  --photo-width: 170px;
+  --photo-top: -3px;
 }
 
 #panmaodong .speaker-photo {
-  --photo-width: 184px;
-  --photo-top: 6px;
+  --photo-width: 235px;
+  --photo-top: 2px;
 }
 
 #weixiaodong .speaker-photo {
-  --photo-top: 4px;
+  --photo-width: 140px;
+  --photo-top: 2px;
+  background-color: #535c65;
 }
 
 #linhongwei .speaker-photo {
-  --photo-top: -4px;
+  --photo-width: 190px;
+  --photo-top: -14px;
 }
 
 #kanghongmei .speaker-photo {
-  --photo-top: 8px;
+  --photo-width: 180px;
+  --photo-top: 6px;
 }
 
 #zhuxuefeng .speaker-photo {
-  --photo-top: 0px;
+  --photo-width: 128px;
+  --photo-top: -2px;
 }
 
 #duxiaoxiao .speaker-photo {
-  --photo-top: 4px;
+  --photo-width: 146px;
+  --photo-top: 0px;
 }
 .tableA{
 

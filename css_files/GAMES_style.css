@@ -215,7 +215,7 @@ overflow-x: auto;
 }
 
 .course-outline-table td:nth-child(2) > ul:first-child {
-  margin-top: 24px;
+  margin-top: 15px;
 }
 
 .course-outline-table td:nth-child(2) > ul:last-child {

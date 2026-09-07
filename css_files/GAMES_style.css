@@ -187,6 +187,10 @@ text-align:justify;
   transform-origin: var(--photo-origin, center center);
 }
 
+#caojuan .speaker-photo {
+  --photo-scale: 0.9;
+}
+
 #sunwenyu .speaker-photo {
   --photo-scale: 1.7;
   --photo-origin: 50% 24%;

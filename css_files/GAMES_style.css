@@ -173,47 +173,72 @@ text-align:justify;
 .speaker-photo img {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: var(--photo-top, 0px);
   display: block;
-  width: 100%;
-  height: 100% !important;
-  object-fit: cover;
-  object-position: var(--photo-position, 50% 10%);
+  width: var(--photo-width, 146px);
+  height: auto !important;
   max-width: none;
   max-height: none;
   border-radius: 0;
   box-shadow: none;
-  transform: translate(-50%, -50%) translateY(var(--photo-y, 0px)) scale(var(--photo-scale, 1));
-  transform-origin: var(--photo-origin, center center);
+  transform: translateX(-50%);
 }
 
+/* Original portraits: hairline top aligned 12px below the 146px frame top. */
 #caojuan .speaker-photo {
-  --photo-scale: 0.9;
+  --photo-width: 146px;
+  --photo-top: -10px;
 }
 
 #sunwenyu .speaker-photo {
-  --photo-scale: 1.7;
-  --photo-origin: 50% 24%;
-  --photo-y: -8px;
+  --photo-width: 248px;
+  --photo-top: -45px;
 }
 
-#zhuxuefeng .speaker-photo {
-  --photo-scale: 1;
-  --photo-position: 50% 50%;
+#zhanghan .speaker-photo {
+  --photo-top: 0px;
 }
 
-#zhuxuefeng .speaker-photo img {
-  object-fit: contain;
+#wangshengfa .speaker-photo {
+  --photo-top: -5px;
+}
+
+#fangqing .speaker-photo {
+  --photo-top: 12px;
 }
 
 #lixin .speaker-photo {
-  --photo-scale: 1.45;
-  --photo-origin: 50% 25%;
+  --photo-width: 212px;
+  --photo-top: -37px;
+}
+
+#zhuchungang .speaker-photo {
+  --photo-top: 1px;
 }
 
 #panmaodong .speaker-photo {
-  --photo-scale: 1.4;
-  --photo-origin: 50% 0%;
+  --photo-width: 204px;
+  --photo-top: 5px;
+}
+
+#weixiaodong .speaker-photo {
+  --photo-top: 3px;
+}
+
+#linhongwei .speaker-photo {
+  --photo-top: -7px;
+}
+
+#kanghongmei .speaker-photo {
+  --photo-top: 7px;
+}
+
+#zhuxuefeng .speaker-photo {
+  --photo-top: -2px;
+}
+
+#duxiaoxiao .speaker-photo {
+  --photo-top: 2px;
 }
 .tableA{
 

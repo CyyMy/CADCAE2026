@@ -35,6 +35,19 @@
     <![endif]-->
 
   <link href="./css_files/common.css" rel="stylesheet">
+
+  <style>
+    .travel-nav { display:flex; flex-wrap:wrap; gap:12px; margin:24px 0; }
+    .travel-nav a { flex:1 1 180px; padding:10px 14px; color:#3b8dbd; border:1px solid #ccc; border-radius:5px; background:#f4f4f4; font-size:16px; }
+    .travel-route { margin:28px 0; padding-top:22px; border-top:7px solid rgb(218,238,243); scroll-margin-top:80px; }
+    .travel-route h4 { color:#4bbdd0; text-align:left; }
+    .travel-route p, .travel-route li { font-size:16px; font-weight:300; line-height:1.8; text-align:left; }
+    .travel-route img, .hotel-map img { display:block; width:100%; height:auto; border:1px solid #ccc; border-radius:5px; }
+    .travel-route figcaption, .hotel-map figcaption { margin-top:8px; font-size:14px; font-weight:300; line-height:1.6; text-align:left; }
+    .route-links { display:flex; flex-wrap:wrap; gap:12px; margin:12px 0; }
+    .route-links a { display:inline-block; padding:8px 14px; border:1px solid #ccc; border-radius:4px; font-size:16px; background:#f4f4f4; }
+    .hotel-map { margin:22px auto; max-width:900px; }
+  </style>
 </head>
 
 <body>
@@ -91,24 +104,49 @@
           <li><span style="color:#4bbdd0;font-weight:500;">地图导航：</span><a href="https://ditu.amap.com/place/B017A00OV0" target="_blank" rel="noopener noreferrer">查看酒店位置与到达路线（高德地图）</a></li>
         </ul>
         <p style="font-size:16px;font-weight:300;text-align:left;line-height:1.8;">导航时请搜索“开封开元名都大酒店”，并核对地址为“郑开大道东1号”。乘坐高铁可选择开封北站；乘飞机可抵达郑州新郑国际机场，再前往开封。</p>
+<nav class="travel-nav" aria-label="到达路线"><a href="#kaifeng-north-route">开封北站</a><a href="#kaifeng-station-route">开封站</a><a href="#xinzheng-airport-route">郑州新郑国际机场</a><a href="#hotel-map">酒店周边地图</a></nav>
         <div class="tableA">
           <table class="table table-striped" style="font-size:16px;font-weight:300;line-height:1.8;">
             <thead><tr><th scope="col" style="width:22%;">抵达地点</th><th scope="col" style="width:18%;">距酒店约</th><th scope="col">到达方式</th></tr></thead>
             <tbody>
               <tr><td>开封北站（高铁）</td><td>8公里</td><td style="text-align:left;">出站后乘出租车或网约车前往酒店。乘公交可在地图中以酒店为终点查询当日路线。</td></tr>
-              <tr><td>开封站（火车）</td><td>8公里</td><td style="text-align:left;">出站后乘出租车或网约车前往酒店；公交路线请以出行当日地图查询为准。</td></tr>
-              <tr><td>宋城路站（城际）</td><td>3公里</td><td style="text-align:left;">如所选城际列车停靠宋城路站，可在此下车，再乘出租车或网约车前往酒店。</td></tr>
-              <tr><td>郑州东站（高铁中转）</td><td>50公里</td><td style="text-align:left;">可查询前往开封北站的列车，抵达后乘车前往酒店；也可直接乘出租车或网约车。</td></tr>
-              <tr><td>郑州新郑国际机场</td><td>70公里</td><td style="text-align:left;">可直接乘出租车或网约车前往酒店。如选择铁路换乘，请查询新郑机场站至开封方向的当日车次及换乘安排。</td></tr>
+              <tr><td>开封站（火车）</td><td>9.2公里</td><td style="text-align:left;">出站后乘出租车或网约车前往酒店；公交路线请以出行当日地图查询为准。</td></tr>
+              <tr><td>宋城路站（城际）</td><td>3公里</td><td style="text-align:left;">如所选城际列车停靠宋城路站，可在此下车，再乘出租车或网约车前往酒店。 <a href="https://api.map.baidu.com/direction?origin=%E5%AE%8B%E5%9F%8E%E8%B7%AF%E7%AB%99&amp;destination=%E5%BC%80%E5%B0%81%E5%BC%80%E5%85%83%E5%90%8D%E9%83%BD%E5%A4%A7%E9%85%92%E5%BA%97&amp;mode=driving&amp;region=%E5%BC%80%E5%B0%81&amp;output=html&amp;src=webapp.cadcae2026.travel" target="_blank" rel="noopener noreferrer">查看路线地图</a></td></tr>
+              <tr><td>郑州东站（高铁中转）</td><td>50公里</td><td style="text-align:left;">可查询前往开封北站的列车，抵达后乘车前往酒店；也可直接乘出租车或网约车。 <a href="https://api.map.baidu.com/direction?origin=%E9%83%91%E5%B7%9E%E4%B8%9C%E7%AB%99&amp;destination=%E5%BC%80%E5%B0%81%E5%BC%80%E5%85%83%E5%90%8D%E9%83%BD%E5%A4%A7%E9%85%92%E5%BA%97&amp;mode=driving&amp;region=%E5%BC%80%E5%B0%81&amp;output=html&amp;src=webapp.cadcae2026.travel" target="_blank" rel="noopener noreferrer">查看路线地图</a></td></tr>
+              <tr><td>郑州新郑国际机场</td><td>70.8公里</td><td style="text-align:left;">可直接乘出租车或网约车前往酒店。如选择铁路换乘，请查询新郑机场站至开封方向的当日车次及换乘安排。</td></tr>
             </tbody>
           </table>
         </div>
+        <p style="font-size:16px;font-weight:300;text-align:left;">以下为2026年9月8日查询的驾车路线截图，点击图片可放大查看。公交及铁路换乘可通过各段的路线查询入口查看。</p>
+        <section id="kaifeng-north-route" class="travel-route">
+          <h4>开封北站 → 开封开元名都大酒店</h4>
+          <p>驾车参考：约8.0公里，约20分钟。推荐路线途经四大街、郑开大道。</p>
+          <div class="route-links"><a href="https://j.map.baidu.com/t/07u9dv" target="_blank" rel="noopener noreferrer">查看实时驾车路线</a><a href="https://api.map.baidu.com/direction?origin=%E5%BC%80%E5%B0%81%E5%8C%97%E7%AB%99&amp;destination=%E5%BC%80%E5%B0%81%E5%BC%80%E5%85%83%E5%90%8D%E9%83%BD%E5%A4%A7%E9%85%92%E5%BA%97&amp;mode=transit&amp;region=%E5%BC%80%E5%B0%81&amp;output=html&amp;src=webapp.cadcae2026.travel" target="_blank" rel="noopener noreferrer">查询公交与换乘路线</a></div>
+          <figure><a href="./information_files/kaifeng-north-route.png" target="_blank" rel="noopener noreferrer" aria-label="放大开封北站到酒店路线图"><img src="./information_files/kaifeng-north-route.png" alt="开封北站到开封开元名都大酒店的百度地图驾车路线" width="1280" height="720" loading="lazy"></a><figcaption>地图来源：百度地图，查询日期：2026年9月8日。图中时间、费用和路况仅供参考，以出发时查询为准。</figcaption></figure>
+        </section>
+        <section id="kaifeng-station-route" class="travel-route">
+          <h4>开封站 → 开封开元名都大酒店</h4>
+          <p>驾车参考：约9.2公里，约28分钟。推荐路线途经魏都路、金明大道。</p>
+          <div class="route-links"><a href="https://j.map.baidu.com/t/HTx9dv" target="_blank" rel="noopener noreferrer">查看实时驾车路线</a><a href="https://api.map.baidu.com/direction?origin=%E5%BC%80%E5%B0%81%E7%AB%99&amp;destination=%E5%BC%80%E5%B0%81%E5%BC%80%E5%85%83%E5%90%8D%E9%83%BD%E5%A4%A7%E9%85%92%E5%BA%97&amp;mode=transit&amp;region=%E5%BC%80%E5%B0%81&amp;output=html&amp;src=webapp.cadcae2026.travel" target="_blank" rel="noopener noreferrer">查询公交与换乘路线</a></div>
+          <figure><a href="./information_files/kaifeng-station-route.png" target="_blank" rel="noopener noreferrer" aria-label="放大开封站到酒店路线图"><img src="./information_files/kaifeng-station-route.png" alt="开封站到开封开元名都大酒店的百度地图驾车路线" width="1280" height="720" loading="lazy"></a><figcaption>地图来源：百度地图，查询日期：2026年9月8日。图中时间、费用和路况仅供参考，以出发时查询为准。</figcaption></figure>
+        </section>
+        <section id="xinzheng-airport-route" class="travel-route">
+          <h4>郑州新郑国际机场 → 开封开元名都大酒店</h4>
+          <p>驾车参考：约70.8公里，约1小时6分钟。推荐路线途经郑民高速、金明大道。</p>
+          <div class="route-links"><a href="https://j.map.baidu.com/t/Tse9dv" target="_blank" rel="noopener noreferrer">查看实时驾车路线</a><a href="https://api.map.baidu.com/direction?origin=%E9%83%91%E5%B7%9E%E6%96%B0%E9%83%91%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA&amp;destination=%E5%BC%80%E5%B0%81%E5%BC%80%E5%85%83%E5%90%8D%E9%83%BD%E5%A4%A7%E9%85%92%E5%BA%97&amp;mode=transit&amp;region=%E5%BC%80%E5%B0%81&amp;output=html&amp;src=webapp.cadcae2026.travel" target="_blank" rel="noopener noreferrer">查询公交与换乘路线</a></div>
+          <figure><a href="./information_files/xinzheng-airport-route.png" target="_blank" rel="noopener noreferrer" aria-label="放大郑州新郑国际机场到酒店路线图"><img src="./information_files/xinzheng-airport-route.png" alt="郑州新郑国际机场到开封开元名都大酒店的百度地图驾车路线" width="1280" height="720" loading="lazy"></a><figcaption>地图来源：百度地图，查询日期：2026年9月8日。图中时间、费用和路况仅供参考，以出发时查询为准。</figcaption></figure>
+        </section>
         <p style="font-size:16px;font-weight:300;text-align:left;line-height:1.8;">以上里程为参考值，实际路线、车程和费用以出行当日导航及运营信息为准。列车时刻与余票请通过<a href="https://www.12306.cn/" target="_blank" rel="noopener noreferrer">铁路12306</a>查询；机场出行请安排足够时间办理手续及往返酒店。</p>
-        <p style="font-size:14px;font-weight:300;text-align:left;">里程参考：<a href="https://kyc.henu.edu.cn/__local/7/22/7E/E6ED126903FCDFC1A469A038C65_33F75F8F_94B6D.pdf" target="_blank" rel="noopener noreferrer">河南大学既往会议交通指南</a>；酒店位置以地图标注为准。</p>
+        <p style="font-size:14px;font-weight:300;text-align:left;">开封北站、开封站及机场里程参考上述百度地图查询；其他里程参考：<a href="https://kyc.henu.edu.cn/__local/7/22/7E/E6ED126903FCDFC1A469A038C65_33F75F8F_94B6D.pdf" target="_blank" rel="noopener noreferrer">河南大学既往会议交通指南</a>；酒店位置以地图标注为准。</p>
         <p style="font-size:22px;border-bottom:7px solid rgb(218, 238, 243);"><br></p>
         <br>
         <a id="jiudian" style="position:relative; top:-72px; display:block; height:0;"></a>
         <h4 style="color:#4bbdd0;">会议酒店与住宿</h4>
+        <figure id="hotel-map" class="hotel-map" style="scroll-margin-top:80px;">
+          <a href="./information_files/kaifeng-hotel-location.png" target="_blank" rel="noopener noreferrer" aria-label="放大酒店周边地图"><img src="./information_files/kaifeng-hotel-location.png" width="1268" height="879" alt="开封开元名都大酒店周边地图，标注郑开大道、金明大道及金明池" loading="lazy"></a>
+          <figcaption>酒店周边位置图，点击可放大。图片来源：<a href="https://kyc.henu.edu.cn/__local/1/12/1B/311B6C8FD6B5A09AA7027D4BCCD_63468654_93C494.pdf" target="_blank" rel="noopener noreferrer">河南大学公开会议手册（2025年，第13页）</a>。周边商户等信息可能变化，实时位置请查看<a href="https://ditu.amap.com/place/B017A00OV0" target="_blank" rel="noopener noreferrer">高德地图</a>。</figcaption>
+        </figure>
+
         <p style="font-size:16px;font-weight:300;text-align:left;line-height:1.8;">本次讲习班会议酒店为河南开封开元名都大酒店，位于金明池畔。酒店介绍可参阅<a href="https://www.kaiyuangroup.com/h-col-105.html" target="_blank" rel="noopener noreferrer">开元旅业集团官网</a>。</p>
         <div class="tableA">
           <table class="table table-striped" style="font-size:16px;font-weight:300;line-height:1.8;">

@@ -173,9 +173,9 @@ text-align:justify;
 .speaker-photo img {
   position: absolute;
   left: 50%;
-  top: var(--photo-top, 0px);
+  top: calc(var(--photo-top, 0) * 100% / 146);
   display: block;
-  width: var(--photo-width, 146px);
+  width: calc(var(--photo-width, 146) * 100% / 146);
   height: auto !important;
   max-width: none;
   max-height: none;
@@ -186,77 +186,120 @@ text-align:justify;
 
 /* Individual original-photo framing, matching the GRMG head-and-shoulders reference. */
 #caojuan .speaker-photo {
-  --photo-width: 132px;
-  --photo-top: -9px;
+  --photo-width: 132;
+  --photo-top: -9;
   background-color: #e8e8e8;
 }
 
 #sunwenyu .speaker-photo {
-  --photo-width: 300px;
-  --photo-top: -58px;
+  --photo-width: 300;
+  --photo-top: -58;
 }
 
 #zhanghan .speaker-photo {
-  --photo-width: 135px;
-  --photo-top: -1px;
+  --photo-width: 135;
+  --photo-top: -1;
   background-color: #80cdf9;
 }
 
 #wangshengfa .speaker-photo {
-  --photo-width: 140px;
-  --photo-top: -6px;
+  --photo-width: 140;
+  --photo-top: -6;
 }
 
 #fangqing .speaker-photo {
-  --photo-width: 146px;
-  --photo-top: 10px;
+  --photo-width: 146;
+  --photo-top: 10;
 }
 
 #lixin .speaker-photo {
-  --photo-width: 222px;
-  --photo-top: -41px;
+  --photo-width: 222;
+  --photo-top: -41;
 }
 
 #zhuchungang .speaker-photo {
-  --photo-width: 170px;
-  --photo-top: -3px;
+  --photo-width: 170;
+  --photo-top: -3;
 }
 
 #wanguoping .speaker-photo {
-  --photo-width: 180px;
-  --photo-top: 0px;
+  --photo-width: 180;
+  --photo-top: 0;
 }
 
 #panmaodong .speaker-photo {
-  --photo-width: 235px;
-  --photo-top: 0px;
+  --photo-width: 235;
+  --photo-top: 0;
 }
 
 #weixiaodong .speaker-photo {
-  --photo-width: 140px;
-  --photo-top: 2px;
+  --photo-width: 140;
+  --photo-top: 2;
   background-color: #535c65;
 }
 
 #linhongwei .speaker-photo {
-  --photo-width: 190px;
-  --photo-top: -14px;
+  --photo-width: 190;
+  --photo-top: -14;
 }
 
 #kanghongmei .speaker-photo {
-  --photo-width: 180px;
-  --photo-top: 0px;
+  --photo-width: 180;
+  --photo-top: 0;
 }
 
 #zhuxuefeng .speaker-photo {
-  --photo-width: 128px;
-  --photo-top: -2px;
+  --photo-width: 128;
+  --photo-top: -2;
 }
 
 #duxiaoxiao .speaker-photo {
-  --photo-width: 146px;
-  --photo-top: 0px;
+  --photo-width: 146;
+  --photo-top: 0;
 }
+/* Fit two portrait columns inside the mobile card. */
+@media (max-width: 767px) {
+  .row.placeholders {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 16px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .row.placeholders::before,
+  .row.placeholders::after {
+    display: none;
+  }
+  .placeholders > .placeholder {
+    width: auto;
+    min-width: 0;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .placeholders .placeholder > button {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .placeholders .speaker-photo {
+    width: 100%;
+    max-width: 146px;
+    height: auto;
+    aspect-ratio: 1;
+  }
+  .placeholders .text-muted {
+    display: block;
+    font-size: clamp(10px, 2.8vw, 14px);
+    overflow-wrap: anywhere;
+  }
+  .placeholders .text-muted span {
+    white-space: normal !important;
+  }
+  .speaker-page .jumbotron > ul {
+    overflow-wrap: anywhere;
+  }
+}
+
 .tableA{
 
 text-align:center;

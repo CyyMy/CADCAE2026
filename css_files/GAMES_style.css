@@ -338,6 +338,35 @@ overflow-x: auto;
   margin-bottom: 10px;
 }
 
+@media (max-width: 767px) {
+  .course-outline-table {
+    table-layout: fixed;
+    width: 100%;
+  }
+  table.course-outline-table > tbody > tr > td {
+    box-sizing: border-box;
+    padding: 6px;
+    font-size: 12px;
+    line-height: 1.5;
+    vertical-align: middle;
+    overflow-wrap: anywhere;
+  }
+  .course-outline-table .course-meta {
+    width: 30%;
+    text-align: center;
+  }
+  .course-outline-table td:nth-child(2) {
+    width: 70%;
+    text-align: left;
+  }
+  .course-outline-table .course-meta-line {
+    white-space: normal;
+  }
+  .course-outline-table td ul {
+    padding-left: 20px;
+  }
+}
+
 .tableA > table {
   width: 100%;
 }

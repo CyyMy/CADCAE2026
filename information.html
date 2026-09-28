@@ -37,10 +37,11 @@
   <link href="./css_files/common.css" rel="stylesheet">
 
   <style>
-    .travel-guide { margin:28px 0 8px; text-align:left; font-size:16px; font-weight:300; line-height:1.8; }
-    .travel-guide h4 { margin:28px 0 8px; color:#222; font-size:18px; font-weight:600; text-align:left; }
+    .travel-guide { margin:28px 0 8px; padding-top:18px; border-top:7px solid rgb(218,238,243); text-align:left; font-size:16px; font-weight:300; line-height:1.8; }
+    .travel-guide h4 { margin:28px 0 10px; color:#222; font-size:18px; font-weight:600; text-align:left; }
     .travel-guide h4:first-child { margin-top:0; }
-    .travel-item { margin:0 0 22px; }
+    .travel-grid { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:18px; }
+    .travel-item { margin:0; padding:14px 18px 16px; border:1px solid #ccc; border-radius:20px; background:#f7f7f7; }
     .travel-item-title { margin:0 0 3px; padding-left:1em; text-indent:-1em; }
     .travel-item-title::before { content:"•"; margin-right:4px; color:#222; }
     .travel-item-title a { color:#0000ee; font-weight:500; }
@@ -50,6 +51,8 @@
     @media (max-width:767px) {
       .travel-guide { font-size:15px; line-height:1.7; }
       .travel-guide h4 { font-size:17px; }
+      .travel-grid { grid-template-columns:1fr; gap:14px; }
+      .travel-item { padding:12px 14px 14px; border-radius:16px; }
       .travel-option { padding-left:1em; text-indent:0; }
     }
   </style>
@@ -113,6 +116,7 @@
         <p style="font-size:16px;font-weight:300;text-align:left;line-height:1.8;">导航时请搜索“开封开元名都大酒店”，并核对地址为“郑开大道东1号”。乘坐高铁可选择开封北站；乘飞机可抵达郑州新郑国际机场，再前往开封。</p>
         <div class="travel-guide" aria-label="到达酒店交通路线">
           <h4>高铁：</h4>
+          <div class="travel-grid">
           <div class="travel-item">
             <p class="travel-item-title"><a href="https://j.map.baidu.com/t/07u9dv" target="_blank" rel="noopener noreferrer">开封北站</a> → 开封开元名都大酒店（路程约 <span class="distance">8 公里</span>）</p>
             <p class="travel-option">公交：乘 53 路公交车至市人大市检察院站下车，然后步行约 160 米到酒店，全程约 35 分钟。</p>
@@ -129,20 +133,25 @@
             <p class="travel-option">高铁换乘：从郑州东站乘车至开封北站，再转乘 53 路公交车或出租车前往酒店。</p>
             <p class="travel-option">出租车：约 60 分钟，费用约 100 元。</p>
           </div>
+          </div>
 
           <h4>火车：</h4>
+          <div class="travel-grid">
           <div class="travel-item">
             <p class="travel-item-title"><a href="https://j.map.baidu.com/t/HTx9dv" target="_blank" rel="noopener noreferrer">开封站</a> → 开封开元名都大酒店（路程约 <span class="distance">9.2 公里</span>）</p>
             <p class="travel-option">公交：从二十七中站乘 31 路公交车至市人大市检察院站下车，然后步行约 220 米到酒店，全程约 50 分钟。</p>
             <p class="travel-option">出租车：约 20 分钟，费用约 20 元。</p>
           </div>
+          </div>
 
           <h4>飞机：</h4>
+          <div class="travel-grid">
           <div class="travel-item">
             <p class="travel-item-title"><a href="https://j.map.baidu.com/t/Tse9dv" target="_blank" rel="noopener noreferrer">郑州新郑国际机场</a> → 开封开元名都大酒店（路程约 <span class="distance">70.8 公里</span>）</p>
             <p class="travel-option">城际铁路：从新郑机场站乘车至宋城路站，再转乘 31 路公交车或出租车前往酒店。</p>
             <p class="travel-option">郑州东站中转：从新郑机场站乘车至郑州东站，再换乘前往宋城路站或开封北站的列车，抵达后乘公交车或出租车前往酒店。</p>
             <p class="travel-option">出租车：约 65 分钟，费用约 150 元。</p>
+          </div>
           </div>
           <p class="travel-note">以上时间和费用仅供参考，列车班次、公交线路及实际费用请以出行当日查询结果为准。</p>
         </div>

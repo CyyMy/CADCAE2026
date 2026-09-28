@@ -37,26 +37,25 @@
   <link href="./css_files/common.css" rel="stylesheet">
 
   <style>
-    .travel-guide { margin:28px 0 8px; padding-top:18px; border-top:7px solid rgb(218,238,243); text-align:left; font-size:16px; font-weight:300; line-height:1.8; }
-    .travel-guide h4 { margin:28px 0 10px; color:#222; font-size:18px; font-weight:600; text-align:left; }
-    .travel-guide h4:first-child { margin-top:0; }
-    .travel-grid { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:18px; }
-    .travel-item { margin:0; padding:14px 18px 16px; border:1px solid #ccc; border-radius:20px; background:#f7f7f7; }
-    .travel-item-title { margin:0 0 3px; padding-left:1em; text-indent:-1em; }
-    .travel-item-title::before { content:"•"; margin-right:4px; color:#222; }
-    .travel-item-title a { color:#0000ee; font-weight:500; }
-    .travel-item-title .distance { color:#0000ee; font-weight:600; }
-    .travel-option { margin:0; padding-left:2em; text-indent:-1em; }
-    .travel-map { display:block; margin-top:12px; overflow:hidden; border:1px solid #ccc; border-radius:16px; background:#fff; }
-    .travel-map img { display:block; width:100%; height:auto; }
-    .travel-note { margin:4px 0 0; padding-left:1em; color:#666; font-size:14px; }
+    .route-jump-nav { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin:24px 0; }
+    .route-jump-nav a { flex:1 1 150px; max-width:210px; padding:9px 12px; color:#4bbdd0; border:1px solid #ccc; border-radius:8px; background:#f4f4f4; font-size:15px; text-align:center; }
+    .route-section { margin-top:26px; padding-top:20px; border-top:7px solid rgb(218,238,243); scroll-margin-top:80px; }
+    .route-summary { margin:0 0 12px; padding-left:20px; font-size:16px; font-weight:300; line-height:1.8; text-align:left; }
+    .route-summary strong { color:#4bbdd0; font-weight:500; }
+    .route-options { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+    .route-card { min-width:0; padding:12px 14px 14px; border:1px solid #ccc; border-radius:20px; background:#f4f4f4; font-size:15px; font-weight:300; line-height:1.55; text-align:left; }
+    .route-card p { margin:0; }
+    .route-card-title { font-weight:500; }
+    .route-map { display:block; margin-top:10px; overflow:hidden; border:1px solid #ccc; border-radius:16px; background:#fff; }
+    .route-map img { display:block; width:100%; height:auto; }
+    .route-map-link { display:inline-block; margin-top:9px; color:#3b8dbd; }
+    .travel-note { margin:18px 0 0; color:#666; font-size:14px; text-align:left; }
     @media (max-width:767px) {
-      .travel-guide { font-size:15px; line-height:1.7; }
-      .travel-guide h4 { font-size:17px; }
-      .travel-grid { grid-template-columns:1fr; gap:14px; }
-      .travel-item { padding:12px 14px 14px; border-radius:16px; }
-      .travel-map { border-radius:12px; }
-      .travel-option { padding-left:1em; text-indent:0; }
+      .route-jump-nav a { flex-basis:46%; }
+      .route-summary { font-size:15px; line-height:1.7; }
+      .route-options { grid-template-columns:1fr; gap:14px; }
+      .route-card { padding:11px 12px 13px; border-radius:16px; font-size:14px; }
+      .route-map { border-radius:12px; }
     }
   </style>
 </head>
@@ -117,50 +116,144 @@
           <li><span style="color:#4bbdd0;font-weight:500;">地图导航：</span><a href="https://ditu.amap.com/place/B017A00OV0" target="_blank" rel="noopener noreferrer">查看酒店位置与到达路线（高德地图）</a></li>
         </ul>
         <p style="font-size:16px;font-weight:300;text-align:left;line-height:1.8;">导航时请搜索“开封开元名都大酒店”，并核对地址为“郑开大道东1号”。乘坐高铁可选择开封北站；乘飞机可抵达郑州新郑国际机场，再前往开封。</p>
-        <div class="travel-guide" aria-label="到达酒店交通路线">
-          <h4>高铁：</h4>
-          <div class="travel-grid">
-          <div class="travel-item">
-            <p class="travel-item-title"><a href="https://j.map.baidu.com/t/07u9dv" target="_blank" rel="noopener noreferrer">开封北站</a> → 开封开元名都大酒店（路程约 <span class="distance">8 公里</span>）</p>
-            <p class="travel-option">公交：乘 53 路公交车至市人大市检察院站下车，然后步行约 160 米到酒店，全程约 35 分钟。</p>
-            <p class="travel-option">出租车：约 18 分钟，费用约 20 元。</p>
-            <a class="travel-map" href="./information_files/kaifeng-north-route.png" target="_blank" rel="noopener noreferrer" aria-label="放大开封北站到酒店路线地图"><img src="./information_files/kaifeng-north-route.png" width="1280" height="720" alt="开封北站到开封开元名都大酒店路线地图" loading="lazy"></a>
-          </div>
-          <div class="travel-item">
-            <p class="travel-item-title"><a href="https://api.map.baidu.com/direction?origin=%E5%AE%8B%E5%9F%8E%E8%B7%AF%E7%AB%99&amp;destination=%E5%BC%80%E5%B0%81%E5%BC%80%E5%85%83%E5%90%8D%E9%83%BD%E5%A4%A7%E9%85%92%E5%BA%97&amp;mode=driving&amp;region=%E5%BC%80%E5%B0%81&amp;output=html&amp;src=webapp.cadcae2026.travel" target="_blank" rel="noopener noreferrer">宋城路站</a> → 开封开元名都大酒店（路程约 <span class="distance">3 公里</span>）</p>
-            <p class="travel-option">公交：从宋城路集英街站乘 31 路公交车至市人大市检察院站下车，然后步行约 160 米到酒店，全程约 30 分钟。</p>
-            <p class="travel-option">出租车：约 10 分钟，费用约 10 元。</p>
-          </div>
-          <div class="travel-item">
-            <p class="travel-item-title"><a href="https://api.map.baidu.com/direction?origin=%E9%83%91%E5%B7%9E%E4%B8%9C%E7%AB%99&amp;destination=%E5%BC%80%E5%B0%81%E5%BC%80%E5%85%83%E5%90%8D%E9%83%BD%E5%A4%A7%E9%85%92%E5%BA%97&amp;mode=driving&amp;region=%E5%BC%80%E5%B0%81&amp;output=html&amp;src=webapp.cadcae2026.travel" target="_blank" rel="noopener noreferrer">郑州东站</a> → 开封开元名都大酒店（路程约 <span class="distance">50 公里</span>）</p>
-            <p class="travel-option">城际铁路：从郑州东站乘车至宋城路站，再转乘 31 路公交车或出租车前往酒店。</p>
-            <p class="travel-option">高铁换乘：从郑州东站乘车至开封北站，再转乘 53 路公交车或出租车前往酒店。</p>
-            <p class="travel-option">出租车：约 60 分钟，费用约 100 元。</p>
-          </div>
-          </div>
+        <nav class="route-jump-nav" aria-label="抵达地点快捷导航">
+          <a href="#kaifeng-north">开封北站</a>
+          <a href="#songcheng-road">宋城路站</a>
+          <a href="#zhengzhou-east">郑州东站</a>
+          <a href="#kaifeng-station">开封站</a>
+          <a href="#xinzheng-airport">新郑国际机场</a>
+        </nav>
 
-          <h4>火车：</h4>
-          <div class="travel-grid">
-          <div class="travel-item">
-            <p class="travel-item-title"><a href="https://j.map.baidu.com/t/HTx9dv" target="_blank" rel="noopener noreferrer">开封站</a> → 开封开元名都大酒店（路程约 <span class="distance">9.2 公里</span>）</p>
-            <p class="travel-option">公交：从二十七中站乘 31 路公交车至市人大市检察院站下车，然后步行约 220 米到酒店，全程约 50 分钟。</p>
-            <p class="travel-option">出租车：约 20 分钟，费用约 20 元。</p>
-            <a class="travel-map" href="./information_files/kaifeng-station-route.png" target="_blank" rel="noopener noreferrer" aria-label="放大开封站到酒店路线地图"><img src="./information_files/kaifeng-station-route.png" width="1280" height="720" alt="开封站到开封开元名都大酒店路线地图" loading="lazy"></a>
+        <section id="kaifeng-north" class="route-section">
+          <ul class="route-summary">
+            <li><strong>开封北站：</strong>开封北站 → 开封开元名都大酒店，路程约 8 公里</li>
+            <li><strong>打车：</strong>约 18 分钟，费用约 20 元</li>
+            <li><strong>公交：</strong></li>
+          </ul>
+          <div class="route-options">
+            <article class="route-card">
+              <p class="route-card-title">【53 路】</p>
+              <p>起：开封北站</p>
+              <p>终：市人大市检察院站</p>
+              <p>步行：约 160 米到酒店</p>
+              <p>耗时：约 35 分钟</p>
+            </article>
+            <article class="route-card">
+              <p class="route-card-title">【出租车 / 网约车】</p>
+              <p>起：开封北站</p>
+              <p>终：开封开元名都大酒店</p>
+              <p>耗时：约 18 分钟</p>
+              <p>费用：约 20 元</p>
+              <a class="route-map" href="./information_files/kaifeng-north-route.png" target="_blank" rel="noopener noreferrer" aria-label="放大开封北站到酒店路线地图"><img src="./information_files/kaifeng-north-route.png" width="1280" height="720" alt="开封北站到开封开元名都大酒店路线地图" loading="lazy"></a>
+            </article>
           </div>
-          </div>
+        </section>
 
-          <h4>飞机：</h4>
-          <div class="travel-grid">
-          <div class="travel-item">
-            <p class="travel-item-title"><a href="https://j.map.baidu.com/t/Tse9dv" target="_blank" rel="noopener noreferrer">郑州新郑国际机场</a> → 开封开元名都大酒店（路程约 <span class="distance">70.8 公里</span>）</p>
-            <p class="travel-option">城际铁路：从新郑机场站乘车至宋城路站，再转乘 31 路公交车或出租车前往酒店。</p>
-            <p class="travel-option">郑州东站中转：从新郑机场站乘车至郑州东站，再换乘前往宋城路站或开封北站的列车，抵达后乘公交车或出租车前往酒店。</p>
-            <p class="travel-option">出租车：约 65 分钟，费用约 150 元。</p>
-            <a class="travel-map" href="./information_files/xinzheng-airport-route.png" target="_blank" rel="noopener noreferrer" aria-label="放大郑州新郑国际机场到酒店路线地图"><img src="./information_files/xinzheng-airport-route.png" width="1280" height="720" alt="郑州新郑国际机场到开封开元名都大酒店路线地图" loading="lazy"></a>
+        <section id="songcheng-road" class="route-section">
+          <ul class="route-summary">
+            <li><strong>宋城路站：</strong>宋城路站 → 开封开元名都大酒店，路程约 3 公里</li>
+            <li><strong>打车：</strong>约 10 分钟，费用约 10 元</li>
+            <li><strong>公交：</strong></li>
+          </ul>
+          <div class="route-options">
+            <article class="route-card">
+              <p class="route-card-title">【31 路】</p>
+              <p>起：宋城路集英街站</p>
+              <p>终：市人大市检察院站</p>
+              <p>步行：约 160 米到酒店</p>
+              <p>耗时：约 30 分钟</p>
+            </article>
+            <article class="route-card">
+              <p class="route-card-title">【出租车 / 网约车】</p>
+              <p>起：宋城路站</p>
+              <p>终：开封开元名都大酒店</p>
+              <p>耗时：约 10 分钟</p>
+              <p>费用：约 10 元</p>
+              <a class="route-map-link" href="https://api.map.baidu.com/direction?origin=%E5%AE%8B%E5%9F%8E%E8%B7%AF%E7%AB%99&amp;destination=%E5%BC%80%E5%B0%81%E5%BC%80%E5%85%83%E5%90%8D%E9%83%BD%E5%A4%A7%E9%85%92%E5%BA%97&amp;mode=driving&amp;region=%E5%BC%80%E5%B0%81&amp;output=html&amp;src=webapp.cadcae2026.travel" target="_blank" rel="noopener noreferrer">查看实时路线地图</a>
+            </article>
           </div>
+        </section>
+
+        <section id="zhengzhou-east" class="route-section">
+          <ul class="route-summary">
+            <li><strong>郑州东站：</strong>郑州东站 → 开封开元名都大酒店，路程约 50 公里</li>
+            <li><strong>打车：</strong>约 60 分钟，费用约 100 元</li>
+            <li><strong>铁路换乘：</strong></li>
+          </ul>
+          <div class="route-options">
+            <article class="route-card">
+              <p class="route-card-title">【城际铁路 → 宋城路站】</p>
+              <p>起：郑州东站</p>
+              <p>终：宋城路站</p>
+              <p>到站后：转乘 31 路公交车或出租车前往酒店</p>
+            </article>
+            <article class="route-card">
+              <p class="route-card-title">【高铁 → 开封北站】</p>
+              <p>起：郑州东站</p>
+              <p>终：开封北站</p>
+              <p>到站后：转乘 53 路公交车或出租车前往酒店</p>
+              <a class="route-map-link" href="https://api.map.baidu.com/direction?origin=%E9%83%91%E5%B7%9E%E4%B8%9C%E7%AB%99&amp;destination=%E5%BC%80%E5%B0%81%E5%BC%80%E5%85%83%E5%90%8D%E9%83%BD%E5%A4%A7%E9%85%92%E5%BA%97&amp;mode=driving&amp;region=%E5%BC%80%E5%B0%81&amp;output=html&amp;src=webapp.cadcae2026.travel" target="_blank" rel="noopener noreferrer">查看实时路线地图</a>
+            </article>
           </div>
-          <p class="travel-note">以上时间和费用仅供参考，列车班次、公交线路及实际费用请以出行当日查询结果为准。</p>
-        </div>
+        </section>
+
+        <section id="kaifeng-station" class="route-section">
+          <ul class="route-summary">
+            <li><strong>开封站：</strong>开封站 → 开封开元名都大酒店，路程约 9.2 公里</li>
+            <li><strong>打车：</strong>约 20 分钟，费用约 20 元</li>
+            <li><strong>公交：</strong></li>
+          </ul>
+          <div class="route-options">
+            <article class="route-card">
+              <p class="route-card-title">【31 路】</p>
+              <p>起：二十七中站</p>
+              <p>终：市人大市检察院站</p>
+              <p>步行：约 220 米到酒店</p>
+              <p>耗时：约 50 分钟</p>
+            </article>
+            <article class="route-card">
+              <p class="route-card-title">【出租车 / 网约车】</p>
+              <p>起：开封站</p>
+              <p>终：开封开元名都大酒店</p>
+              <p>耗时：约 20 分钟</p>
+              <p>费用：约 20 元</p>
+              <a class="route-map" href="./information_files/kaifeng-station-route.png" target="_blank" rel="noopener noreferrer" aria-label="放大开封站到酒店路线地图"><img src="./information_files/kaifeng-station-route.png" width="1280" height="720" alt="开封站到开封开元名都大酒店路线地图" loading="lazy"></a>
+            </article>
+          </div>
+        </section>
+
+        <section id="xinzheng-airport" class="route-section">
+          <ul class="route-summary">
+            <li><strong>郑州新郑国际机场：</strong>郑州新郑国际机场 → 开封开元名都大酒店，路程约 70.8 公里</li>
+            <li><strong>打车：</strong>约 65 分钟，费用约 150 元</li>
+            <li><strong>铁路换乘：</strong></li>
+          </ul>
+          <div class="route-options">
+            <article class="route-card">
+              <p class="route-card-title">【城际铁路 → 宋城路站】</p>
+              <p>起：新郑机场站</p>
+              <p>终：宋城路站</p>
+              <p>到站后：转乘 31 路公交车或出租车前往酒店</p>
+            </article>
+            <article class="route-card">
+              <p class="route-card-title">【郑州东站中转】</p>
+              <p>起：新郑机场站</p>
+              <p>换乘：郑州东站</p>
+              <p>终：宋城路站或开封北站</p>
+              <p>到站后：乘公交车或出租车前往酒店</p>
+            </article>
+            <article class="route-card">
+              <p class="route-card-title">【出租车 / 网约车】</p>
+              <p>起：郑州新郑国际机场</p>
+              <p>终：开封开元名都大酒店</p>
+              <p>耗时：约 65 分钟</p>
+              <p>费用：约 150 元</p>
+              <a class="route-map" href="./information_files/xinzheng-airport-route.png" target="_blank" rel="noopener noreferrer" aria-label="放大郑州新郑国际机场到酒店路线地图"><img src="./information_files/xinzheng-airport-route.png" width="1280" height="720" alt="郑州新郑国际机场到开封开元名都大酒店路线地图" loading="lazy"></a>
+            </article>
+          </div>
+        </section>
+
+        <p class="travel-note">以上时间和费用仅供参考，列车班次、公交线路及实际费用请以出行当日查询结果为准。</p>
 
 
 

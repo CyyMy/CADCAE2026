@@ -248,11 +248,6 @@ text-align:justify;
   --photo-top: 0;
 }
 
-#zhuxuefeng .speaker-photo {
-  --photo-width: 128;
-  --photo-top: -2;
-}
-
 #duxiaoxiao .speaker-photo {
   --photo-width: 146;
   --photo-top: 0;
